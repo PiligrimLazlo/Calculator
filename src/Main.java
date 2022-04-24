@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Frame frame = new Frame();
+        Frame frame = new Frame("Калькулятор");
 
         Calculator calculator = new Calculator();
         String RPNString = calculator.transformToRPN("3 + 4.5 * 2 / (1 - 5)^2");

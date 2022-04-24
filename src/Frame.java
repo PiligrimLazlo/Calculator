@@ -16,7 +16,8 @@ public class Frame extends JFrame {
 
     private final Calculator calculator;
 
-    public Frame() {
+    public Frame(String name) {
+        super(name);
         calculator = new Calculator();
         initCenterPanel();
         initBottomPanel();

@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public class Calculator {
 
     public String transformToRPN(String input) {
+        input = input.replaceAll(",", ".");
         char[] chars = input.toCharArray();
 
         StringBuilder outString = new StringBuilder();
